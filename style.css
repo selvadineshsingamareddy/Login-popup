@@ -1,0 +1,156 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*html {
+  overflow-y: scroll;
+}*/
+
+.form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #696763;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #FE980F;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #FE980F;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+.form h1 {
+  text-align: center;
+  color: #000;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.form label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: #696763;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+.form label .req {
+  margin: 2px;
+  color: #FE980F;
+}
+
+.form label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+.form label.active .req {
+  opacity: 0;
+}
+
+.form label.highlight {
+  color: #ffffff;
+}
+
+.form input, .form textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #000;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.form input:focus,.form textarea:focus {
+  outline: 0;
+  border-color: #FE980F;
+}
+
+.form textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.zoom-anim-dialog .button {
+  border: 0 none;
+  border-radius: 0;
+  color: #696763;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  outline: medium none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.zoom-anim-dialog .button:hover, .button:focus {
+  background: #FE980F;
+  color: #ffffff;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
